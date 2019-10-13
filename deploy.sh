@@ -5,12 +5,12 @@ git push
 echo -e "\033[0;32mDeploying new blog...\033[0m"
 
 echo -e "\033[0;32mDeleting old site...\033[0m"
-cd ~/www/jaxgil.github.io
+cd ../jaxgil.github.io
 git rm -rf .
 git clean -fxd
 
 echo -e "\033[0;32mRunning hugo...\033[0m"
-hugo -d ~/www/jaxgil.github.io
+snap run hugo -d ~/www/jaxgil.github.io
 
 echo -e "\033[0;32mChanging to blog directory...\033[0m"
 
