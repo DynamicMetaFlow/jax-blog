@@ -16,7 +16,7 @@ echo -e "\033[0;32mCommit and push the new build...\033[0m"
 git commit -am "New Blog Build (`date`)"
 git push
 
-echo -e "\033[0;32mChange back to jaxgil.com...\033[0m"
-cd ../jax-blog
+#echo -e "\033[0;32mChange back to jaxgil.com...\033[0m"
+#cd ../jax-blog
 
 echo -e "\033[0;32mDeploy complete.\033[0m"
