@@ -6,8 +6,7 @@ echo -e "\033[0;32mDeploying new blog...\033[0m"
 
 echo -e "\033[0;32mDeleting old site...\033[0m"
 cd ../jaxgil.github.io
-git rm -rf .
-git clean -fxd
+rm -rf *
 
 echo -e "\033[0;32mRunning hugo...\033[0m"
 snap run hugo -d ~/www/jaxgil.github.io
