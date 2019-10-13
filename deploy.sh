@@ -11,6 +11,7 @@ find -not -path "./.git/*" -not -name ".git" -delete
 
 
 echo -e "\033[0;32mRunning hugo...\033[0m"
+cd ~/www/jax-blog
 snap run hugo -d ~/www/jaxgil.github.io
 
 echo -e "\033[0;32mChanging to blog directory...\033[0m"
