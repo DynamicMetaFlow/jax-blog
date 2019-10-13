@@ -5,7 +5,10 @@ git push
 echo -e "\033[0;32mDeploying new blog...\033[0m"
 
 echo -e "\033[0;32mDeleting old site...\033[0m"
-rm -rf ~/www/jaxgil.github.io
+cd ~/www/jaxgil.github.io
+find -not -path "./.git/*" -not -name ".git" | grep git
+find -not -path "./.git/*" -not -name ".git" -delete
+
 
 echo -e "\033[0;32mRunning hugo...\033[0m"
 snap run hugo -d ~/www/jaxgil.github.io
